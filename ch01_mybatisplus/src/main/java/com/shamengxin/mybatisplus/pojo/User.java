@@ -1,8 +1,10 @@
 package com.shamengxin.mybatisplus.pojo;
 
 import com.baomidou.mybatisplus.annotation.*;
+import com.shamengxin.mybatisplus.enums.SexEnum;
 import lombok.Data;
 import org.springframework.transaction.event.TransactionalEventListener;
+import sun.plugin2.os.windows.SECURITY_ATTRIBUTES;
 
 @Data
 // @TableName("t_user")
@@ -18,6 +20,8 @@ public class User {
     private Integer age;
 
     private String email;
+
+    private SexEnum sex;
 
     @TableLogic
     private Integer isDeleted;

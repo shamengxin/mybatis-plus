@@ -8,15 +8,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ch01_mybatisplus" />
+        <module name="ch02_mybatisX" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ch01_mybatisplus" target="1.8" />
+      <module name="ch02_mybatisX" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ch01_mybatisplus" options="-parameters" />
+      <module name="ch02_mybatisX" options="-parameters" />
     </option>
   </component>
 </project>

@@ -6,7 +6,11 @@
 <mapper namespace="com.shamengxin.mybatisplus.mapper.UserMapper">
 
     <select id="selectMapById" resultType="map">
-        select id,name,age,email from t_user where id=#{id}
+        select uid,user_name,age,email from t_user where uid=#{uid}
+    </select>
+
+    <select id="selectPageVo" resultType="user">
+        select uid,user_name,age,email from t_user where age>#{age}
     </select>
 
 </mapper>
